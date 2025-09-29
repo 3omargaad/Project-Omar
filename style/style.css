@@ -1,0 +1,233 @@
+:root {
+    /* --cool-blue: #2f4c8b;
+    --sky-blue: #9ac1f4; */
+    --white: #EEEEEE;
+    /* --black: #222230;
+    --grey: #323232; */
+
+    --dark: #041026;
+    --cold-blue: #0A3873;
+    --water-blue: #187FD9;
+    --cool-green: #22B7F2;
+    --leaf-green: #94D7F2;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: "Open Sans";
+} 
+
+body {
+    margin: 0;
+    background-color: #041026FE;
+    background-image: url(https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fmedia.istockphoto.com%2Fvectors%2Fcircuit-board-seamless-pattern-vector-id538722269%3Fk%3D6%26m%3D538722269%26s%3D612x612%26w%3D0%26h%3DZXwLU4Oy1BCBMC38R4bhECo1Sfjrj2jutq6sykg3I94%3D&f=1&nofb=1&ipt=c0bf44dc1c0575ec9f84e075f701944f65cae67249ac18c6b282309a38179e36);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-blend-mode: multiply;
+}
+
+.navbar {
+    font-family: "Outfit";
+}
+
+#name, h2 {
+    font-family: "Press Start 2P", sans-serif;
+}
+
+.section_heading {
+    font-size:xx-large;
+}
+
+
+#about {
+    border-style:solid;
+    border-color: var(--cool-green);
+    margin-top: 25px;
+    margin-bottom: 25px;
+    /* background-color: var(--water-blue); */
+}
+
+#projects {
+    border-style:solid;
+    border-color: var(--cool-green);
+    margin-top: 25px;
+    margin-bottom: 25px;
+    /* background-color: var(--cool-green); */
+}
+
+
+#skills {
+    border-style:solid;
+    border-color: var(--cool-green);
+    margin-top: 25px;
+    margin-bottom: 25px;
+    /* background-color: var(--leaf-green); */
+}
+
+#contact {
+    border-style:solid;
+    border-color: var(--cool-green);
+    margin-top: 25px;
+    margin-bottom: 25px;
+    /* background-color: var(--leaf-green); */
+}
+
+
+main {
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3.5em;
+    /* margin-top: 20px;*/
+    animation-name: wobble;
+    animation-duration: 1.25s;
+    animation-iteration-count: infinite;
+}
+
+a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+.project_icon {
+    width: 150px;
+    height: 150px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+@keyframes wobble {
+    0% { transform: rotate(0deg); }
+    20% { transform: rotate(5deg); }
+    50% { transform: rotate(0deg); }
+    75% { transform: rotate(-5deg); }
+    100% { transform: rotate(0deg); }
+}
+
+p, ul, li {
+    font-family: "Funnel Sans", serif;
+}
+
+#about, #contact {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-top: 20px;
+}
+
+h1, h2, h3, p, li {
+    color: var(--white);
+}
+/* Navigation Bar */
+.navbar ul {
+    list-style-type: none;
+    background-color: var(--cold-blue);
+    color: var(--white);
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: var(--white);
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+
+.navbar a:hover {
+    background-color: var(--water-blue);
+    color: var(--white);
+}
+
+.navbar li {
+    float: left;
+    color:  var(--white);
+}
+
+
+
+
+#about #projects {
+    border-style: solid;
+}
+
+#skills {
+    text-align: center;
+}
+
+#skill_section, #project_section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Space between cards */
+}
+
+#FMI, #Smiley_PCB, #BoMB, #Project_Website {
+    list-style: none;
+}
+
+.skillset {
+    background-color: var(--cold-blue); /* Card background color */
+    width: 300px; /* Change card width here */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    overflow: hidden;
+    align-items: center;
+    transition: transform 0.2s; /* Smooth hover effect */
+    color: var(--white);
+    text-align: left;
+
+    
+    position: relative; /* Needed for child positioning */
+    background-repeat: no-repeat;
+    background-position: top right;     /* Change to 'center', 'left', etc. if needed */
+    background-size: 75px;              /* Adjust size for subtlety */
+    opacity: 1;                         /* Keeps text at full opacity */
+    padding-right: 5px;
+}
+
+#project-section {
+    text-align: center;
+}
+
+#hardware {
+    background-image: url("/images/hardware.svg");
+}
+
+#software {
+    background-image: url("/images/software.svg");
+}
+
+#transferable {
+    background-image: url("/images/transferable.svg");
+}
+
+img {
+    width: 30px;
+    height: 30px;
+    align-self: center;
+}
+
+h3 {
+    color: white;
+}
+
+.skillset:hover {
+    background-color: var(--water-blue); /* Card background color */
+    transform: scale(1.02); /* Zoom effect on hover */
+}
+
+
+a {
+    color: var(--cool-green);
+}
