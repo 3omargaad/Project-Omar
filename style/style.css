@@ -28,7 +28,7 @@ body {
 }
 
 .navbar {
-    font-family: "Outfit";
+    font-family: "Funnel Sans";
 }
 
 #name, h2 {
@@ -109,7 +109,7 @@ a {
 }
 
 p, ul, li {
-    font-family: "Funnel Sans", serif;
+    font-family: "Outfit", serif;
     font-size: 1em;
 }
 
