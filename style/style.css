@@ -51,8 +51,8 @@ body {
 #projects {
     border-style:solid;
     border-color: var(--cool-green);
-    margin-top: 25px;
-    margin-bottom: 25px;
+    margin-top: 5%;
+    margin-bottom: 5%;
     /* background-color: var(--cool-green); */
 }
 
@@ -85,11 +85,16 @@ h1 {
     /* margin-top: 20px;*/
     animation-name: wobble;
     animation-duration: 1.25s;
-    animation-iteration-count: infinite;
+    animation-iteration-count: 3;
 }
 
 a {
     text-decoration: none;
+    color: var(--cool-green);
+}
+
+a:hover {
+    text-decoration: underline;
     color: var(--white);
 }
 
@@ -102,9 +107,9 @@ a {
 
 @keyframes wobble {
     0% { transform: rotate(0deg); }
-    20% { transform: rotate(5deg); }
+    20% { transform: rotate(3.5deg); }
     50% { transform: rotate(0deg); }
-    75% { transform: rotate(-5deg); }
+    75% { transform: rotate(-3.5deg); }
     100% { transform: rotate(0deg); }
 }
 
@@ -233,12 +238,12 @@ h3 {
     color: white;
 }
 
+#personal_statement {
+    padding-right: 5%;
+    padding-left: 5%;
+}
+
 .skillset:hover {
     background-color: var(--water-blue); /* Card background color */
     transform: scale(1.02); /* Zoom effect on hover */
-}
-
-
-a {
-    color: var(--cool-green);
 }
