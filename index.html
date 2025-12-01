@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="style/style.css">
         <link rel="stylesheet" href="style/fonts.css">
 
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=memory" />
+        
         <!--CSS-->
     </head>
 
@@ -26,9 +26,9 @@
         </nav>
 
         <main>
-            <section id="about">
+            <section id="about" class="outlined">
                 <h2 class="section_heading">About</h2>
-                <p>Hi, I'm Omar Gaad! I'm an aspiring Computer Engineer whose interested in using both Hardware and Software to bring my ideas to life and solve problems. <br> To build up my skill set and explore different areas in the field, I've made a few fun projects, I hope you'll enjoy.</p>
+                <p id="personal_statement">Hi, I'm Omar Gaad. I'm an aspiring Computer Engineer whose interested in using both Hardware and Software to bring my ideas to life and solve problems. <br> To build up my skill set and explore different areas in the field, I've made a few fun projects, I hope you'll enjoy.</p>
             </section>
 
             <section id="projects">
@@ -37,40 +37,70 @@
                 <!-- <h3>Software</h3> -->
                 
                 <section id="project_section">
-                    <a href="fmi.html" target="_blank"> <ul id="FMI" class="skillset">
-                        <h3>Forehead Mass Index (FMI)</h3>
-
-                        <img src="images/FMI_icon.png" alt="FMI Icon" class="project_icon">
-                        <li>Type: <i>Software</i></li>
-                        <li>Description: A Website to calculate someone's Forehead Mass Index (FMI). It's like BMI but for Foreheads.</li>
+                    <a href="mafia.html" target="_blank"> 
+                        <ul id="BoMB" class="skillset">
+                        <h3>Mafia</h3>
                         <br>
-                    </ul>
-                    </a>
-                    
-                    <a href="smiley_pcb.html" target="_blank"> 
-                        <ul id="Smiley_PCB" class="skillset">
-                        <h3>Smiley PCB</h3>
-                        <img src="images/smiley_icon.png" alt="Smiley PCB Icon" class="project_icon">
-                        <li>Type: <i>Hardware</i></li>
-                        <li>Description: A simple circuit the starts of frowny :( but when you push a button, it smiles :)</li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        </br>
+                        <img src="images/mafia_logo.png" alt="Smiley PCB Icon" class="project_icon">
+                        <li>Type: <strong>Software</strong></li>
+                        <li>Description: A Mobile and Desktop App for the social deduction game Mafia where the host is automated.</li>
+                        <!--
+                        <li>What: An Application for the social deduction game Mafia where the host is automated.</li>
+                        <li>How: Built with Python using kivy library for GUI, gTTS for Text to Speech and OOP for player objects</li>
+                        <li>Results: Project is still under construction but available</li>
+                        -->
+                        <br>
+                        <br>
                     </ul>
                     </a>
 
                     <a href="bomb.html" target="_blank"> 
                         <ul id="BoMB" class="skillset">
                         <h3>Box of Marvellous Beats (BoMB)</h3>
+                        <br>
                         <img src="images/hardware.svg" alt="Smiley PCB Icon" class="project_icon">
-                        <li>Type: <i>Integrated</i></li>
-                        <li>Description: [Insert info]</li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
+                        <li>Type: <strong>Integrated</strong></li>
+                        <li>Description: An electronic music box that allows user to pick songs to play on a buzzer e.g Tetris or Mario Theme</li>
+                        <br>
+                        <!--
+                        <li>How: Based on an a Arduino Uno Microcontroller, programmed in C++.</li>
+                        <br>
+                        <li>Results: Project is still under construction</li>
                         </br>
+                        -->
                     </ul>
+                    </a>
+
+                    
+                    <a href="smiley_pcb.html" target="_blank"> 
+                        <ul id="Smiley_PCB" class="skillset">
+                            <h3>Smiley PCB</h3>
+                            <br>
+                            <img src="images/smiley_icon.png" alt="Smiley PCB Icon" class="project_icon">
+                            <li>Type: <strong>Hardware</strong></li>
+                            <li>Description: A simple circuit the starts of frowny :( but when you push a button, it smiles :)</li>
+                            <br>
+                            <!--
+                            <li>How: Uses 555 Timer IC on Bistable mode to change between expressions. Designed using KiCAD software, ordered using JLCPCB.</li>
+                            <li>Results: The circuit sucessfully functions as intended as shown <a href="https://www.linkedin.com/posts/omar-gaad-663283340_a-few-months-ago-i-began-playing-activity-7326973294983696384-PMJG?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFV4N-sBmcgyhK4JzVZ3BO_Pb6xugJmSTEk" target="_blank">here</a>. I learned how to design and develop a Circuit Board from scratch. This project be improved by using SMD components.</li>
+                            </br>
+                            -->
+                        </ul>
+                    </a>
+
+                    <a href="fmi.html" target="_blank"> <ul id="FMI" class="skillset">
+                            <h3>Forehead Mass Index (FMI)</h3>
+                            <br>
+                            <img src="images/FMI_icon.png" alt="FMI Icon" class="project_icon">
+                            <li>Type: <strong>Software</strong></li>
+                            <li>Description: A Website to calculate someone's Forehead Mass Index (FMI). It's like BMI but for Foreheads.</li>
+                            <br>
+                            <!--
+                            <li>How: Developed using HTML for structure, CSS for an authentic design and JavaScript to create the interactive form, saving results in Local Storage. In addition Git for Version Control and GitHub for public hosting.</li>
+                            <li>Results: A simple interactive website available <a href="https://3omargaad.github.io/FMI/", target="_blank">here</a>. I learned the foundations of creating websites and used the skills to develop this very portfolio.</li>
+                            <br>
+                            -->
+                        </ul>
                     </a>
                 </section>
 
@@ -119,10 +149,22 @@
 
             <footer id="contact">
                 <h2 class="section_heading">Contact</h2>
-                <p>Get in touch at <a href="mailto:3omargaad@gmail.com">3omargaad@gmail.com</a> or <a href="https://www.linkedin.com/in/omar-gaad-663283340/">LinkedIn</a></p>
+                <p><a href="mailto:3omargaad@gmail.com">Email</a> | <a href="https://www.linkedin.com/in/omar-gaad-663283340/">LinkedIn</a> | <a href="https://github.com/3omargaad">GitHub</a></p>
             </footer>
         </main>
 
-        <script src="scripts/script.js"></script>
+        <--!
+        Projects
+Mafia Programming Project (July 2025 - Present)
+Developed a Python-based version of the game Mafia, automating the role of the host.
+Designed the GUI using the kivy library, created text-to-speech audio using gTTS and Used OOP to create player objects. Documented each component to support future development and improvement. 
+Used Git and GitHub for version control, and overcame multiple logic and syntax challenges through independent research.
+Music Box Electronic Project (July 2025 - Present)
+Designed and developed an electronic music box with a friend using a passive buzzer, microcontroller and LCD 
+Dedicated significant time to document hardware and software components in order to keep the project organised and reduce errors.
+Built upon arduino C++ skills and learned how to use a 3D CAD software (FreeCAD) to design and 3D Print a case for the PCB.
+
+        
+        !-->
     </body>
 </html>
