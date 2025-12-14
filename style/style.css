@@ -189,6 +189,10 @@ h1, h2, h3, p, li {
 
 #FMI, #Smiley_PCB, #BoMB, #Project_Website {
     list-style: none;
+    height: 90%;
+    text-align: center;
+    padding-right: 2%;
+    padding-left: 2%;
 }
 
 .skillset {
