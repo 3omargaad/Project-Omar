@@ -1,4 +1,4 @@
-#Welcome to my Portfolio!
+# Welcome to my Portfolio Website!
 
 As an aspiring Computer Engineer interested in both Hardware and Software projects, I've decided the best way to display this interest is through fun projects.
 
